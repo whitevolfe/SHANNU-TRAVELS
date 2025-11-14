@@ -41,7 +41,7 @@ const Contact = () => {
                 <Phone className='h-5 w-5 text-primary mt-1 mr-3' />
                 <div>
                   <p className='font-medium'>Phone</p>
-                  <p className='text-gray-600'>027-2222719</p>
+                  {/* <p className='text-gray-600'>027-2222719</p> */}
                   <p className='text-gray-600'>076-2182529</p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ const Contact = () => {
                 <Mail className='h-5 w-5 text-primary mt-1 mr-3' />
                 <div>
                   <p className='font-medium'>Email</p>
-                  <p className='text-gray-600'>info@shannutravels.com</p>
+                  <p className='text-gray-600'>Shannutravels@gmail.com</p>
                 </div>
               </div>
               <div className='flex items-start'>
@@ -59,7 +59,7 @@ const Contact = () => {
                   <p className='text-gray-600'>
                     123 Main Street
                     <br />
-                    Colombo, Sri Lanka
+                    Trincomalee, Sri Lanka
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@ const Contact = () => {
               </p>
               <p className='flex justify-between'>
                 <span className='text-gray-600'>Saturday:</span>
-                <span>9:00 AM - 3:00 PM</span>
+                <span>9:00 AM - 6:00 PM</span>
               </p>
               <p className='flex justify-between'>
                 <span className='text-gray-600'>Sunday:</span>

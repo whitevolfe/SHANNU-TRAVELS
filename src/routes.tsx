@@ -3,7 +3,7 @@ import App from '@/App';
 import Index from '@/pages/Index';
 import Blog from '@/pages/Blog';
 import Services from '@/pages/Services';
-import Gallery from '@/pages/Gallery';
+// import Gallery from '@/pages/Gallery';
 import Contact from '@/pages/Contact';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfUse from '@/pages/TermsOfUse';
@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'gallery',
-        element: <Gallery />,
+        // element: <Gallery />,
       },
       {
         path: 'contact',

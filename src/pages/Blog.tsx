@@ -1,4 +1,7 @@
 import { Card } from '@/components/ui/card';
+import blogimg1 from '@/assets/blogimg1.jpg';
+import blogimg2 from '@/assets/blogimg2.jpg';
+import blogimg3 from '@/assets/blogimg3.jpg';
 
 const Blog = () => {
   const blogPosts = [
@@ -7,21 +10,21 @@ const Blog = () => {
       date: 'November 9, 2025',
       excerpt:
         'Discover the most beautiful and culturally rich destinations across Sri Lanka. From ancient temples to pristine beaches...',
-      image: 'https://source.unsplash.com/800x400/?srilanka,tourism',
+      image: blogimg1,
     },
     {
       title: 'Essential Travel Tips for First-Time Visitors',
       date: 'November 8, 2025',
       excerpt:
         'Planning your first trip to Sri Lanka? Here are the essential tips you need to know about transportation, accommodation...',
-      image: 'https://source.unsplash.com/800x400/?travel,tips',
+      image: blogimg2,
     },
     {
       title: 'Local Cuisine Guide: Must-Try Sri Lankan Dishes',
       date: 'November 7, 2025',
       excerpt:
         "Explore the rich flavors of Sri Lankan cuisine. From spicy curries to sweet desserts, here's your guide to local delicacies...",
-      image: 'https://source.unsplash.com/800x400/?srilanka,food',
+      image: blogimg3,
     },
   ];
 

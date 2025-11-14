@@ -35,7 +35,7 @@ const Services = () => {
     },
     {
       icon: <Users className='h-8 w-8 mb-4 text-primary' />,
-      title: 'Group Tours',
+      title: 'Travel Insurance',
       description:
         'Organized group tours with experienced guides and planned itineraries.',
     },

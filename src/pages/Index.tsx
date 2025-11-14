@@ -13,8 +13,8 @@ const Index = () => {
       <Hero />
       <AirlinePartners />
       <Services />
-      <Milestones />
-      <AwardGallery />
+      {/* <Milestones /> */}
+      {/* <AwardGallery /> */}
       <ContactSection />
     </>
   );

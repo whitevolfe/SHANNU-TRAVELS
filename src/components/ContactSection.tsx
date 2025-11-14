@@ -15,11 +15,20 @@ const ContactSection = () => {
               076-2182529
             </Button>
             <Button
+              asChild
               size='lg'
               className='bg-[#25D366] hover:bg-[#1DA851] text-white'
             >
-              <MessageCircle className='mr-2 h-5 w-5' />
-              WhatsApp
+              {/* Assumption: phone is Sri Lanka mobile number 076-2182529 -> international 94762182529 */}
+              <a
+                href='https://wa.me/94762182529'
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label='Chat on WhatsApp'
+              >
+                <MessageCircle className='mr-2 h-5 w-5' />
+                WhatsApp
+              </a>
             </Button>
           </div>
         </div>
