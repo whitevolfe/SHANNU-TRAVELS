@@ -19,7 +19,6 @@ const App = () => (
         <main className='flex-1'>
           <Outlet />
         </main>
-        <ContactSection />
         <Footer />
       </div>
     </TooltipProvider>
