@@ -5,6 +5,7 @@ import Blog from '@/pages/Blog';
 import Services from '@/pages/Services';
 // import Gallery from '@/pages/Gallery';
 import Visas from '@/pages/Visas';
+import Flights from '@/pages/Flights';
 import Contact from '@/pages/Contact';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfUse from '@/pages/TermsOfUse';
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: 'visas',
         element: <Visas />,
+      },
+      {
+        path: 'flights',
+        element: <Flights />,
       },
       {
         path: 'gallery',

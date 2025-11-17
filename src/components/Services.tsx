@@ -62,6 +62,14 @@ const Services = () => {
               );
             }
 
+            if (service.title === 'FLIGHTS') {
+              return (
+                <Link key={service.title} to='/flights'>
+                  {cardContent}
+                </Link>
+              );
+            }
+
             return cardContent;
           })}
         </div>
