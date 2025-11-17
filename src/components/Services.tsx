@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 import { Plane, CreditCard, Hotel, Shield, Ship, Palmtree } from 'lucide-react';
 
 const Services = () => {
@@ -32,10 +33,10 @@ const Services = () => {
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {services.map((service) => {
             const Icon = service.icon;
-            return (
+            const cardContent = (
               <Card
                 key={service.title}
-                className='border-0 shadow-card hover:shadow-hover transition-all group'
+                className='border-0 shadow-card hover:shadow-hover transition-all group cursor-pointer'
               >
                 <CardContent className='p-8 text-center'>
                   <div className='mb-6 flex justify-center'>
@@ -52,6 +53,16 @@ const Services = () => {
                 </CardContent>
               </Card>
             );
+
+            if (service.title === 'VISA') {
+              return (
+                <Link key={service.title} to='/visas'>
+                  {cardContent}
+                </Link>
+              );
+            }
+
+            return cardContent;
           })}
         </div>
       </div>
