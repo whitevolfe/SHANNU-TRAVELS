@@ -9,18 +9,7 @@ const Services = () => {
       description:
         'International and domestic flight bookings with competitive rates and flexible options.',
     },
-    {
-      icon: <Hotel className='h-8 w-8 mb-4 text-primary' />,
-      title: 'Hotel Reservations',
-      description:
-        'Book accommodations worldwide, from luxury hotels to cozy guesthouses.',
-    },
-    {
-      icon: <Car className='h-8 w-8 mb-4 text-primary' />,
-      title: 'Transport Services',
-      description:
-        'Reliable transport solutions including airport transfers and tour vehicles.',
-    },
+
     {
       icon: <Globe className='h-8 w-8 mb-4 text-primary' />,
       title: 'Tour Packages',

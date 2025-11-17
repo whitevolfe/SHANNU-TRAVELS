@@ -7,19 +7,23 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import sriLankanImg from '../assets/srilankanairlines.jpg';
+import qatarairwaysImg from '../assets/qatarairways.png';
+import gulfairwaysImg from '../assets/gulfairways.png';
+import indigoairwaysImg from '../assets/indigo.png';
+import etihadirwaysImg from '../assets/etihadairways.png';
+import airindiaairwaysImg from '../assets/airindiaairways.png';
 
 const AirlinePartners = () => {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   const airlines = [
-    { name: 'Qatar Airways', color: '#2E7D32' },
-    { name: 'Gulf Air', color: '#FF6B35' },
-    { name: 'IndiGo', color: '#1E3A8A' },
-    { name: 'Srilankan', color: '#0EA5E9' },
-    { name: 'Emirates', color: '#2E7D32' },
-    { name: 'Etihad', color: '#FF6B35' },
-    { name: 'Air India', color: '#1E3A8A' },
-    { name: 'Srilankan', color: '#0EA5E9' },
+    { image: qatarairwaysImg },
+    { image: gulfairwaysImg },
+    { image: indigoairwaysImg },
+    { image: sriLankanImg },
+    { image: etihadirwaysImg },
+    { image: airindiaairwaysImg },
   ];
 
   return (
@@ -36,16 +40,18 @@ const AirlinePartners = () => {
           <CarouselContent className='-ml-4'>
             {airlines.map((airline) => (
               <CarouselItem
-                key={airline.name}
+                key={airline.image}
                 className='pl-4 basis-1/2 md:basis-1/4'
               >
                 <div className='flex items-center justify-center h-20 bg-white rounded-lg shadow-card hover:shadow-hover transition-shadow'>
-                  <span
-                    className='text-2xl font-bold'
-                    style={{ color: airline.color }}
-                  >
-                    {airline.name}
-                  </span>
+                  {airline.image ? (
+                    <img
+                      src={airline.image}
+                      className='h-12 w-auto object-contain'
+                    />
+                  ) : (
+                    <span className='text-2xl font-bold'>{airline.image}</span>
+                  )}
                 </div>
               </CarouselItem>
             ))}
