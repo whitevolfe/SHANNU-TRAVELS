@@ -34,6 +34,11 @@ const Visas = () => {
       flag: indiaFlag,
     },
     {
+      country: 'UAE',
+      flag: uaeFlag,
+    },
+
+    {
       country: 'UK',
       flag: ukFlag,
     },
