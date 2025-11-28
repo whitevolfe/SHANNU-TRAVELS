@@ -8,6 +8,12 @@ import nepalFlag from '../assets/nepal-flag.png';
 import omanFlag from '../assets/oman-flag.png';
 import qatarFlag from '../assets/qatar-flag.png';
 import vietnamFlag from '../assets/vietnam-flag.png';
+import indiaFlag from '../assets/india-flag.png';
+import uaeFlag from '../assets/UAE-flag.png';
+import canadaFlag from '../assets/canada-flag.jpg';
+import ukFlag from '../assets/uk-flag.jpg';
+import franceFlag from '../assets/france-flag.jpg';
+import germanyFlag from '../assets/germany-flag.png';
 
 const Visas = () => {
   const visaServices = [
@@ -22,6 +28,26 @@ const Visas = () => {
     {
       country: 'Vietnam',
       flag: vietnamFlag,
+    },
+    {
+      country: 'India',
+      flag: indiaFlag,
+    },
+    {
+      country: 'UK',
+      flag: ukFlag,
+    },
+    {
+      country: 'Canada',
+      flag: canadaFlag,
+    },
+    {
+      country: 'France',
+      flag: franceFlag,
+    },
+    {
+      country: 'Germany',
+      flag: germanyFlag,
     },
     {
       country: 'Malaysia',
