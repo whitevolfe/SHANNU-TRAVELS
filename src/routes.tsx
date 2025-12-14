@@ -9,6 +9,7 @@ import Flights from '@/pages/Flights';
 import Contact from '@/pages/Contact';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfUse from '@/pages/TermsOfUse';
+import IndianVisaDetails from '@/pages/IndianVisaDetails';
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: 'visas',
         element: <Visas />,
+      },
+      {
+        path: 'indian-visa-details',
+        element: <IndianVisaDetails />,
       },
       {
         path: 'flights',

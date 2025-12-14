@@ -1,4 +1,5 @@
 import { Card } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 import azerbaijanFlag from '../assets/azerbaijan-flag.png';
 import cambodiaFlag from '../assets/cambodia-flag.png';
 import chinaFlag from '../assets/china-flag.png';
@@ -93,25 +94,47 @@ const Visas = () => {
       </div>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-        {visaServices.map((service, index) => (
-          <Card key={index} className='p-6 hover:shadow-lg transition-shadow'>
-            <div className='flex items-center space-x-4'>
-              <img
-                src={service.flag}
-                alt={`${service.country} flag`}
-                className='w-12 h-8 object-cover rounded'
-              />
-              <div>
-                <h3 className='text-lg font-semibold text-primary'>
-                  {service.country}
-                </h3>
-                <p className='text-sm text-muted-foreground'>
-                  {service.country}
-                </p>
+        {visaServices.map((service, index) =>
+          service.country === 'India' ? (
+            <Link key={index} to='/indian-visa-details'>
+              <Card className='p-6 hover:shadow-lg transition-shadow cursor-pointer'>
+                <div className='flex items-center space-x-4'>
+                  <img
+                    src={service.flag}
+                    alt={`${service.country} flag`}
+                    className='w-12 h-8 object-cover rounded'
+                  />
+                  <div>
+                    <h3 className='text-lg font-semibold text-primary'>
+                      {service.country}
+                    </h3>
+                    <p className='text-sm text-muted-foreground'>
+                      {service.country}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          ) : (
+            <Card key={index} className='p-6 hover:shadow-lg transition-shadow'>
+              <div className='flex items-center space-x-4'>
+                <img
+                  src={service.flag}
+                  alt={`${service.country} flag`}
+                  className='w-12 h-8 object-cover rounded'
+                />
+                <div>
+                  <h3 className='text-lg font-semibold text-primary'>
+                    {service.country}
+                  </h3>
+                  <p className='text-sm text-muted-foreground'>
+                    {service.country}
+                  </p>
+                </div>
               </div>
-            </div>
-          </Card>
-        ))}
+            </Card>
+          )
+        )}
       </div>
 
       <div className='text-center mt-16'>
