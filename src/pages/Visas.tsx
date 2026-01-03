@@ -94,9 +94,30 @@ const Visas = () => {
       </div>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-        {visaServices.map((service, index) =>
-          service.country === 'India' ? (
-            <Link key={index} to='/indian-visa-details'>
+        {visaServices.map((service, index) => {
+          const routeMap = {
+            India: '/indian-visa-details',
+            Qatar: '/qatar-visa-details',
+            Oman: '/oman-visa-details',
+            Vietnam: '/vietnam-visa-details',
+            UAE: '/uae-visa-details',
+            UK: '/uk-visa-details',
+            Canada: '/canada-visa-details',
+            France: '/france-visa-details',
+            Germany: '/germany-visa-details',
+            Malaysia: '/malaysia-visa-details',
+            Nepal: '/nepal-visa-details',
+            Indonesia: '/indonesia-visa-details',
+            China: '/china-visa-details',
+            Cambodia: '/cambodia-visa-details',
+            Azerbaijan: '/azerbaijan-visa-details',
+          };
+
+          return (
+            <Link
+              key={index}
+              to={routeMap[service.country as keyof typeof routeMap]}
+            >
               <Card className='p-6 hover:shadow-lg transition-shadow cursor-pointer'>
                 <div className='flex items-center space-x-4'>
                   <img
@@ -115,26 +136,8 @@ const Visas = () => {
                 </div>
               </Card>
             </Link>
-          ) : (
-            <Card key={index} className='p-6 hover:shadow-lg transition-shadow'>
-              <div className='flex items-center space-x-4'>
-                <img
-                  src={service.flag}
-                  alt={`${service.country} flag`}
-                  className='w-12 h-8 object-cover rounded'
-                />
-                <div>
-                  <h3 className='text-lg font-semibold text-primary'>
-                    {service.country}
-                  </h3>
-                  <p className='text-sm text-muted-foreground'>
-                    {service.country}
-                  </p>
-                </div>
-              </div>
-            </Card>
-          )
-        )}
+          );
+        })}
       </div>
 
       <div className='text-center mt-16'>
