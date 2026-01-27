@@ -57,7 +57,7 @@ const Contact = () => {
                 <div>
                   <p className='font-medium'>Address</p>
                   <p className='text-gray-600'>
-                    123 Main Street
+                    71/1 ,Kandy Road
                     <br />
                     Trincomalee, Sri Lanka
                   </p>
@@ -79,7 +79,7 @@ const Contact = () => {
               </p>
               <p className='flex justify-between'>
                 <span className='text-gray-600'>Sunday:</span>
-                <span>Closed</span>
+                <span>9:00 AM - 1:00 PM</span>
               </p>
             </div>
           </Card>
