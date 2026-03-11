@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 const MalaysiaVisaDetails = () => {
   const visaTypes = [
     {
-      type: '30/90 days tourist visa',
+      type: '30 days tourist visa',
       requirements: [
         'Scanned passport page',
         'Passport size photo',
