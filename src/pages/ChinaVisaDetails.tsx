@@ -8,7 +8,7 @@ const ChinaVisaDetails = () => {
         'Passport with 6 months validity (previous passport)',
         '2 passport size photo',
         'Letter head OR BRC of applicant',
-        '3 Bank statement with confirmation letter balance of LKR 500,000',
+        '3 months Bank statement with confirmation letter balance of LKR 500,000',
       ],
     },
   ];
